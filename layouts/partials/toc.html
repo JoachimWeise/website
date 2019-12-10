@@ -1,0 +1,19 @@
+{{ if (.Params.toc) }}
+  {{ $toc := .TableOfContents }}
+  {{ $toc := (replace $toc "<ul>\n<li>\n<ul>" "<ul>") }}
+  {{ $toc := (replace $toc "<ul>\n<li>\n<ul>" "<ul>") }}
+  {{ $toc := (replace $toc "<ul>\n<li>\n<ul>" "<ul>") }}
+  {{ $toc := (replace $toc "</ul></li>\n</ul>" "</ul>") }}
+  {{ $toc := (replace $toc "</ul></li>\n</ul>" "</ul>") }}
+  {{ $toc := (replace $toc "</ul></li>\n</ul>" "</ul>") }}
+  <!-- count the number of remaining li tags -->
+  <!-- and only display ToC if more than 1, otherwise why bother -->
+
+    {{ if gt (len (split $toc "<li>")) 2 }}
+      <aside class="toc-article">
+      <h3 style="text-align:center; margin-bottom: 0.7em; 
+      margin-right: 1em">Table of Contents</h3>
+        {{ safeHTML $toc }}
+      </aside>
+    {{ end }}
+{{- end }}

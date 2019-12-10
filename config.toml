@@ -1,0 +1,89 @@
+baseurl = "https://joachimweise.github.io/"
+DefaultContentLanguage = "en"
+#DefaultContentLanguage = "ja"
+theme = "beautifulhugo"
+title = "Joachim Weise"
+metaDataFormat = "yaml"
+
+pygmentsUseClassic = false
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentOptions = "linenos=inline"
+
+[[Params.bigimg]]
+  src = "img/night.jpg"
+  desc = "Nathan Anderson"
+[[Params.bigimg]]
+  src = "img/notredame.jpg"
+  desc = "Gargoyle on Notre Dame"
+
+
+[Params]
+  homeTitle = "My random walk" # Text for header on home page
+  subtitle = "Learning by writing about AI, physics, and more"
+  mainSections = ["post","posts"]
+  logo = "img/joachim3.png" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "Jan 2, 2006"
+  commit = true
+  comments = true
+  readingTime = true
+  wordCount = true
+  showRelatedPosts = true
+  hideAuthor = true
+
+
+[Author]
+  name = "Joachim Weise"
+  website = "yourwebsite.com"
+  email = "youremail@domain.com"
+  github = "username"
+  gitlab = "username"
+  linkedin = "username"
+  kaggle = "username"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 2
+
+[[menu.main]]
+    identifier = "subpages"
+    name = "Subject pages"
+    weight = 3
+
+[[menu.main]]
+    parent = "subpages"
+    name = "AI / ML"
+    url = "page/aiml"
+    weight = 1
+
+[[menu.main]]
+    parent = "subpages"
+    name = "Data Science 101"
+    url = "page/ds"
+    weight = 2
+
+[[menu.main]]
+    parent = "subpages"
+    name = "General Relativity"
+    url = "page/gr"
+    weight = 3
+
+[[menu.main]]
+    parent = "subpages"
+    name = "Quantum Theory"
+    url = "page/qt"
+    weight = 4
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 4
+

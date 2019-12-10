@@ -1,0 +1,1 @@
+The main purpose of this blog is to support my own learning process in AI, machine learning, data science, physics and other areas. Hardly any of the content is original, instead the focus is rather on clarity of exposition.
