@@ -95,14 +95,14 @@ $ git merge <new-branch>
 $ git push -u origin master
 {{</ highlight >}}
 
-Hosting on GitHub is easy. Two repos are created on GitHub:
+Hosting on GitHub works as follows. Two repos are created on GitHub:
 
 * `website-github` contains Hugo's content and other source files
 * `joachimweise.github.io` contains the fully rendered version of the Hugo website. 
 
 A git submodule is created through `git submodule add -b master git@github.com:joachimweise/joachimweise.github.io.git public`. Now when I run the hugo command to build the site to public, the created public directory will have a different remote origin (i.e. hosted GitHub repository). By running the following script through `./deploy.sh` I can send changes to `joachimweise.github.io`: 
 
-{{< highlight bash "linenos=inline">}}
+{{< highlight bash >}}
 #!/bin/sh
 
 # If a command fails then the deploy stops
@@ -131,7 +131,10 @@ git push origin master
 {{</ highlight >}}
 
 
-Hosting with Gitlab is also easy. A `.gitlab-ci.yml` file in the root directory of the Hugo site configures the GitLab CI on how to build the site:
+I was facing issues with this setup when I accidentally deleted the content of the loca `/public` folder, which led to error messages like `fatal: in unpopulated submodule 'public'`. The following approach seems to help: delete references to the submodule in `.gitmodules`, `.git\config` and `.git\modules`. Then remove the `public` folder and execute `git rm -r public`, then add the submodule again as described above.
+
+
+Hosting with Gitlab seems to me more straightforward. A `.gitlab-ci.yml` file in the root directory of the Hugo site configures the GitLab CI on how to build the site:
 
 {{< highlight YAML >}}
 image: monachus/hugo
