@@ -3,7 +3,7 @@ title: Data Leader Days 2019
 subtitle: Great event in Berlin near Oberbaumbrücke
 date: 2019-11-14
 bigimg: [{src: "/img/2019-11-14-data-leader-days/Spree.jpg", desc: "River Spree in the morning"}]
-tags: ["ai_applications", "event"]
+tags: ["ai-applications", "event"]
 ---
 
 Today I had the pleasure to present at [Data Leader Days](https://www.dataleaderdays.com/), a two-day management forum for leaders in the data space. 2019 marked its 5th edition, hosting data practitioners from Retail, Telco, Industrial Goods and Finance. Focus was on practical data science applications, with excursions into more specific areas such as data catalogs or deep learning based image processing. The event was located in the [030 event loft](https://www.spreespeicher-events.de/locations/030eventloft/), an unusual venue with direct access to river Spree near [Oberbaumbrücke](https://de.wikipedia.org/wiki/Oberbaumbr%C3%BCcke). Here are some impressions:
