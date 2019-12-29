@@ -4,55 +4,57 @@ subtitle:
 date: 2019-12-24
 # lastmod: 2019-12-25
 bigimg: [{src: "/img/2019-12-21-AI-weekly-51-2019.jpg", desc: "Sunset (2017)"}]
-tags: ["raspberry", "robot", "python"]
+tags: ["raspberry", "electronics", "robot", "python"]
 ---
 
-In this project I am interfacing the HC-SR04 ultrasonic sensor module to a Raspberry Pi to measure distance. Later on the Raspberry as well as the sensor will be part of an obstacle avoiding robot.
+In this project I am interfacing the HC-SR04 ultrasonic sensor module to a Raspberry Pi to measure distance. Later on the Raspberry as well as the sensor will be part of an obstacle avoiding robot. I use my oscilloscope to check whether the sensor is working as announced.
 
 
 <!--more-->
 
+***
+
 
 A basic ultrasonic sensor consists of one or more ultrasonic transmitters (basically speakers), a receiver, and a control circuit. The transmitters emit a high frequency ultrasonic sound, which bounces off any nearby solid object. Some of that ultrasonic signal is reflected and detected by the receiver on the sensor. That return signal is then processed by the control circuit to calculate the time difference between the signal being transmitted and received. This time can subsequently be used to calculate the distance between the sensor and the reflecting object.
 
-The HC-SR04 ultrasonic module operates at 5 V with a current of some 15 mA and measures the distance effectively starting from 2 cm to 400 cm.  It has four pins: ground (GND), Echo Pulse Output (ECHO), Trigger Pulse Input (TRIG), and 5 V Supply (Vcc). We power the module using Vcc, ground it using GND, and use our Raspberry Pi to send an input signal to TRIG.
+The HC-SR04 ultrasonic module operates at 5V with a current of some 15mA and measures the distance effectively starting from 2cm to 400cm.  It has four pins: ground (`GND`), Echo Pulse Output (`ECHO`), Trigger Pulse Input (`TRIG`), and 5V Supply (`Vcc`). We power the module using `Vcc`, ground it using `GND`, and use our Raspberry Pi to send an input signal to `TRIG`.
 
-The HC-SR04 sensor requires a short 10 uS pulse to trigger the module, which will cause the sensor to start the ranging program (8 ultrasound bursts at 40 kHz) in order to obtain an echo response. Once the 8 burst pattern is sent, the Echo pin is set high (i.e 5 V), and when the signal reflects and comes back the Echo pin is set low (0 V). This time duration for which the Echo pin stays high is the time taken for the ultrasonic wave to travel and come back (round trip). The distance can then be calculated using the speed of sound 343 m/s.
-
-
-<center>
-{{< figure src="/img/2019-12-25-ultrasonic-sensor-raspi/timing-diagram2.jpg" width="700px" caption="Timing Diagram" caption-position="bottom" caption-effect="fade">}}
-</center>
-
-
-Like mentioned above the operating voltage of the module is 5V.  The input pin on the Raspberry Pi GPIO is only 3.3V tolerant. Sending a 5V signal into a 3.3V input port could damage the GPIO pins. We use a small voltage divider to solve this problem. A voltage divider consists of two resistors (R1 and R2) in series connected to an input voltage (Vin), which needs to be reduced to our output voltage (Vout). In our circuit, Vin will be ECHO, which needs to be decreased from 5V to our Vout of 3.3V.
-
-<center>
-{{< figure src="/img/2019-12-25-ultrasonic-sensor-raspi/voltage-divider.jpg" width="500px" caption="Voltage Divider" caption-position="bottom" caption-effect="fade">}}
-</center>
-
-Using the great software [fritzing](https://fritzing.org/home/) we can draw a schematic of how it will look like in reality, when all pins are connected using a breadboard and jumper wires:
-
+The HC-SR04 sensor requires a short 10-100us pulse to trigger the module, which will cause the sensor to start the ranging program (8 ultrasound bursts at 40kHz) in order to obtain an echo response. Once the 8 burst pattern is sent, the `ECHO` pin is set high (i.e 5V), and when the signal reflects and comes back the Echo pin is set low (0V). This time duration for which the `ECHO` pin stays high is the time taken for the ultrasonic wave to travel and come back (round trip). The distance can then be calculated using the speed of sound 343m/s.
 
 
 <center>
-{{< figure src="/img/2019-12-25-ultrasonic-sensor-raspi/schematic3.jpg" width="400px" caption="Schematic" caption-position="bottom" caption-effect="fade">}}
+{{< figure src="/img/2019-12-25-ultrasonic-sensor-raspi/timing-diagram2.jpg" width="600px" caption="Fig. 1: Timing Diagram" caption-position="bottom" caption-effect="fade">}}
 </center>
 
-Some pictures how it looks in reality. The distance is displayed in a single line in the shell which is constantly updated:
+
+As mentioned above the operating voltage of the module is 5V.  The input pin on the Raspberry Pi GPIO is only 3.3V tolerant. Sending a 5V signal into a 3.3V input port could damage the GPIO pins. We use a  voltage divider to solve this problem. A voltage divider consists of two resistors (R1 = 1kOhm and R2 = 2kOhm) in series connected to an input voltage (`V_in`), which needs to be reduced to our output voltage (`V_out`). In our circuit, `V_in` will be `ECHO`, which needs to be decreased from 5V to our `V_out` of 3.3V.
+
+<center>
+{{< figure src="/img/2019-12-25-ultrasonic-sensor-raspi/voltage-divider.jpg" width="500px" caption="Fig. 2: Voltage Divider" caption-position="bottom" caption-effect="fade">}}
+</center>
+ 
+I am a big fan of the software [fritzing](https://fritzing.org/home/) which allows to draw neat schematics in next to no time. That's how it will look like when all pins are connected using a breadboard and jumper wires:
+
+
+
+<center>
+{{< figure src="/img/2019-12-25-ultrasonic-sensor-raspi/schematic3.jpg" width="300px" caption="Fig. 3: Schematic" caption-position="bottom" caption-effect="fade">}}
+</center>
+
+Figures 4 and 5 show my cabling, as it looks in reality (slightly messy). Figure 6 shows a screenshot of how the distance is displayed in a single line in the shell that is constantly being updated:
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" link="/img/2019-12-25-ultrasonic-sensor-raspi/pic1.jpg" caption="Overview">}}
-  {{< figure thumb="-thumb" link="/img/2019-12-25-ultrasonic-sensor-raspi/pic2.jpg" caption="Closeup">}}
-  {{< figure link="/img/2019-12-25-ultrasonic-sensor-raspi/pic3.jpg" caption="Ouput in shell">}}
+  {{< figure thumb="-thumb" link="/img/2019-12-25-ultrasonic-sensor-raspi/pic1.jpg" caption="Fig. 4: Overview">}}
+  {{< figure thumb="-thumb" link="/img/2019-12-25-ultrasonic-sensor-raspi/pic2.jpg" caption="Fig. 5: Closeup">}}
+  {{< figure link="/img/2019-12-25-ultrasonic-sensor-raspi/pic3.jpg" caption="Fig. 6: Ouput in shell">}}
 {{< /gallery >}}
 
 
-And finally the corresponding Python code. The `time.time()` function will record the latest timestamp for a given condition. For example, if a pin goes from low to high, and we’re recording the low condition using the `time.time()` function, the recorded timestamp will be the latest time at which that pin was low.
+The Python code to trigger and read out the sensor can be kept quite simple. The `RPi.GPIO`  library allows to easily configure and read-write the input/output pins on the Pi’s GPIO interface within a Python script. It is installed by default on recent versions of Raspbian Linux. The `time.time()` function will record the latest timestamp for a given condition. For example, if a pin goes from low to high, and we’re recording the low condition using the `time.time()` function, the recorded timestamp will be the latest time at which that pin was low.
   
 
 {{< highlight bash "linenos=inline">}}
-# GPIO example using an NC-SR04 ultrasonic rangefinder
+# GPIO example using an HC-SR04 ultrasonic rangefinder
 
 # import the GPIO and time libraries
 import RPi.GPIO as GPIO
@@ -97,3 +99,29 @@ while True:
     # Display the results. end = '\r' forces the output to the same line
     print("Distance: " + str(distance) + "cm             ", end = '\r')
 {{</ highlight >}}
+
+
+Next I use my Tektronix 2465 oscilloscope to check whether the sensor really works as desribed above. Let's first see if the distance conversion, using the speed of sound in air, works as promised. I connect the scope to `GND` (black) and `ECHO` (red/orange), as shown in Figures 7 and 8. After a short fight with the trigger, the scope shows that `ECHO` is high for some 23ms. Multiplying this with the speed of sound of 343m/s and dividing by 2 (round trip) yields a distance of some 3.9m which is in line with what was display. Nice!
+
+
+{{< gallery caption-effect="fade" >}}
+  {{< figure thumb="-thumb" link="/img/2019-12-25-ultrasonic-sensor-raspi/osci01.jpg" caption="Fig. 7: Connecting the scope">}}
+  {{< figure thumb="-thumb" link="/img/2019-12-25-ultrasonic-sensor-raspi/osci02.jpg" caption="Fig. 8: Connecting the scope">}}
+  {{< figure link="/img/2019-12-25-ultrasonic-sensor-raspi/osci03.jpg" caption="Fig. 9: ECHO set high for 23ms">}}
+{{< /gallery >}}
+
+
+As a last step I try to take a look at the "8 burst pattern" that the sensor is supposed to send out after being triggered by the Raspberry. The letters 'T' and 'R' on the front of the sensor board seem to indicate that the transmitter sits left and the receiver right. I use a probe head to connect to one of the contacts of the transmitter, as shown in Figures 10 and 11. The scope shows in fact 8 peaks in a time span of some 210us. The peaks thus come at a frequency of 38kHz. The description didn't lie!
+
+
+{{< gallery caption-effect="fade" >}}
+  {{< figure thumb="-thumb" link="/img/2019-12-25-ultrasonic-sensor-raspi/osci04.jpg" caption="Fig. 10: Probe head on sensor board">}}
+  {{< figure thumb="-thumb" link="/img/2019-12-25-ultrasonic-sensor-raspi/osci05.jpg" caption="Fig. 11: Probe head on sensor board">}}
+  {{< figure link="/img/2019-12-25-ultrasonic-sensor-raspi/osci06.jpg" caption="Fig. 12: Eight burst at 38kHz">}}
+{{< /gallery >}}
+
+And, in the end, a fun GIF:
+
+<center>
+{{< figure src="/img/2019-12-25-ultrasonic-sensor-raspi/osci4.gif" width="500px" caption="Schematic" caption-position="bottom" caption-effect="fade">}}
+</center>
