@@ -1,1 +1,1 @@
-The main purpose of this blog is to support my own learning process in AI, machine learning, data science, physics and other areas. Hardly any of the content is original, instead the focus is rather on clarity of exposition.
+I write this blog mainly to support my own learning process in AI, machine learning, data science, physics and other areas. My main goal is to summarize things in a way so that even I can understand them. 

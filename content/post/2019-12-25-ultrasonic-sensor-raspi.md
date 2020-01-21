@@ -1,10 +1,10 @@
 ---
 title: Ultrasonic Range Sensor on the Raspberry Pi
 subtitle: 
-date: 2019-12-24
+date: 2019-12-28
 # lastmod: 2019-12-25
-bigimg: [{src: "/img/2019-12-21-AI-weekly-51-2019.jpg", desc: "Sunset (2017)"}]
-tags: ["raspberry", "electronics", "robot", "python"]
+bigimg: [{src: "/img/2019-12-25-ultrasonic-sensor-raspi/background.jpg", desc: "8 ultrasound bursts at 40kHz"}]
+tags: ["raspberry", "electronics", "robot", "python", "code"]
 ---
 
 In this project I am interfacing the HC-SR04 ultrasonic sensor module to a Raspberry Pi to measure distance. Later on the Raspberry as well as the sensor will be part of an obstacle avoiding robot. I use my oscilloscope to check whether the sensor is working as announced.
@@ -19,7 +19,7 @@ A basic ultrasonic sensor consists of one or more ultrasonic transmitters (basic
 
 The HC-SR04 ultrasonic module operates at 5V with a current of some 15mA and measures the distance effectively starting from 2cm to 400cm.  It has four pins: ground (`GND`), Echo Pulse Output (`ECHO`), Trigger Pulse Input (`TRIG`), and 5V Supply (`Vcc`). We power the module using `Vcc`, ground it using `GND`, and use our Raspberry Pi to send an input signal to `TRIG`.
 
-The HC-SR04 sensor requires a short 10-100us pulse to trigger the module, which will cause the sensor to start the ranging program (8 ultrasound bursts at 40kHz) in order to obtain an echo response. Once the 8 burst pattern is sent, the `ECHO` pin is set high (i.e 5V), and when the signal reflects and comes back the Echo pin is set low (0V). This time duration for which the `ECHO` pin stays high is the time taken for the ultrasonic wave to travel and come back (round trip). The distance can then be calculated using the speed of sound 343m/s.
+The HC-SR04 sensor requires a short 10-100us pulse to trigger the module, which will cause the sensor to start the ranging program (8 ultrasound bursts at 40kHz) in order to obtain an echo response. Once the 8 burst pattern is sent, the `ECHO` pin is set high (i.e 5V), and when the signal reflects and comes back the `ECHO` pin is set low (0V). This time duration for which the `ECHO` pin stays high is the time taken for the ultrasonic wave to travel and come back (round trip). The distance can then be calculated using the speed of sound 343m/s.
 
 
 <center>
@@ -101,7 +101,7 @@ while True:
 {{</ highlight >}}
 
 
-Next I use my Tektronix 2465 oscilloscope to check whether the sensor really works as desribed above. Let's first see if the distance conversion, using the speed of sound in air, works as promised. I connect the scope to `GND` (black) and `ECHO` (red/orange), as shown in Figures 7 and 8. After a short fight with the trigger, the scope shows that `ECHO` is high for some 23ms. Multiplying this with the speed of sound of 343m/s and dividing by 2 (round trip) yields a distance of some 3.9m which is in line with what was display. Nice!
+Next I use my Tektronix 2465 oscilloscope to check whether the sensor really works as desribed above. Let's first see if the distance conversion, using the speed of sound in air, works as promised. I connect the scope to `GND` (black) and `ECHO` (red/orange), as shown in Figures 7 and 8. After a short fight with the trigger, the scope shows that `ECHO` is high for some 23ms. Multiplying this with the speed of sound of 343m/s and dividing by 2 (round trip) yields a distance of some 3.9m which is in line with what was displayed. Nice!
 
 
 {{< gallery caption-effect="fade" >}}
@@ -111,7 +111,7 @@ Next I use my Tektronix 2465 oscilloscope to check whether the sensor really wor
 {{< /gallery >}}
 
 
-As a last step I try to take a look at the "8 burst pattern" that the sensor is supposed to send out after being triggered by the Raspberry. The letters 'T' and 'R' on the front of the sensor board seem to indicate that the transmitter sits left and the receiver right. I use a probe head to connect to one of the contacts of the transmitter, as shown in Figures 10 and 11. The scope shows in fact 8 peaks in a time span of some 210us. The peaks thus come at a frequency of 38kHz. The description didn't lie!
+As a last step I try to take a look at the "8 burst pattern" that the sensor is supposed to send out after being triggered by the Raspberry. The letters 'T' and 'R' on the front of the sensor board seem to indicate that the transmitter sits left and the receiver right. I use a probe head to connect to one of the contacts of the transmitter on the backside of the circuit board, as shown in Figures 10 and 11. The scope shows in fact 8 peaks in a time span of some 210us. The peaks thus come at a frequency of 38kHz. The description didn't lie!
 
 
 {{< gallery caption-effect="fade" >}}
@@ -120,7 +120,7 @@ As a last step I try to take a look at the "8 burst pattern" that the sensor is 
   {{< figure link="/img/2019-12-25-ultrasonic-sensor-raspi/osci06.jpg" caption="Fig. 12: Eight burst at 38kHz">}}
 {{< /gallery >}}
 
-And, in the end, a fun GIF:
+A fun GIF as a farewell from this experiment:
 
 <center>
 {{< figure src="/img/2019-12-25-ultrasonic-sensor-raspi/osci4.gif" width="500px" caption="Schematic" caption-position="bottom" caption-effect="fade">}}
