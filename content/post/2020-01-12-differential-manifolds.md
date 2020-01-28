@@ -2,7 +2,7 @@
 title: Differentiable Manifolds
 markup: mmark
 date: 2020-01-19
-bigimg: [{src: "/img/2020-01-12-differentiable-manifolds/venedig.jpg", desc: "Venice, heading for a thunder storm (June 2019)"}]
+bigimg: [{src: "/img/2020-01-12-differentiable-manifolds/venedig.jpg", desc: "Venice, heading for a thunder storm (July 2019)"}]
 tags: ["geometry", "relativity", "mathematics", "physics"]
 ---
 
@@ -81,14 +81,14 @@ The charts must be sewn together smoothly. More precisely, if $$\phi_\alpha$$ an
 
 
 {{% panel theme="note" %}}
-Any pair of charts $$\phi_\alpha$$ and $$\phi_\beta$$ is **compatible** of class $$C^k$$ or **$$C^k$$-related**  if either $$U_\alpha \cap U_\beta = \emptyset$$, or $$U_\alpha \cap U_\beta \neq \emptyset$$ and the **transition functions** $$\phi_{\alpha\beta}$$ and $$\phi_{\beta\alpha}$$, with
+Any pair of charts $$\phi_\alpha$$ and $$\phi_\beta$$ is **compatible** of class $$C^k$$ or **$$C^k$$-related**  if either $$U_\alpha \cap U_\beta = \emptyset$$, or $$U_\alpha \cap U_\beta =\not\, \emptyset$$ and the **transition functions** $$\phi_{\alpha\beta}$$ and $$\phi_{\beta\alpha}$$, with
 $$\phi_{\alpha\beta} := \phi_\alpha \circ \phi_\beta^{-1} : 
 \phi_\beta(U_\alpha \cap U_\beta) \to \phi_\alpha(U_\alpha \cap U_\beta) \; ,$$
 are functions of class $$C^k$$ between open subsets of $$\mathbb{R}^n$$. They are also called **change of coordinate** or **coordinate transformation**.  
 {{% /panel %}}
 
 <center>
-{{< figure src="/img/2020-01-12-differentiable-manifolds/change-of-coordinates.jpg" width="600px" caption="Change of coordinates" caption-position="bottom" caption-effect="fade">}}
+{{< figure src="/img/2020-01-12-differentiable-manifolds/change-of-coordinates.jpg" width="600px" caption="Figure 1: Change of coordinates" caption-position="bottom" caption-effect="fade">}}
 </center>
 
 For simplicity, we shall from now on always assume smooth mappings, i.e. differentiable mappings of class $$C^\infty$$ on $$\mathbb{R}^n$$ (the derivatives of all orders exist and are continuous). 
@@ -131,7 +131,7 @@ A **differentiable** (or **smooth**) **manifold** is a topological manifold with
 
 Next, let us introduce various geometrical objects that are defined on smooth manifolds. There are many examples: functions such as the Lagrangian and Hamiltonian functions, curves on manifolds such as solution curves of equations of motion, vector fields such as the velocity field of a given dynamical system, forms such as the volume form that appears in Liouville’s theorem, and many more. 
 
-We start with a rather general notion: mappings $$f: (\mathcal{M},\mathcal{A}) \to (\mathcal{N},\mathcal{B})$$ from a smooth manifold $$\mathcal{M}$$ with atlas $$\mathcal{A}$$ onto another manifold $$\mathcal{N}$$ with atlas $$\mathcal{B}$$ (where $$\mathcal{N}$$ may be identical with $$\mathcal{M}$$). The point $$p$$, which is contained in an open subset $$U$$ of $$\mathcal{M}$$, is mapped onto the point $$f(p)$$ in $$N$$, which, of course, is contained in the image $$f(U)$$ of $$U$$. Let's investigate what it means for such a function $$f$$ to be differentiable (see Figure~\ref{smooth-mapping}):
+We start with a rather general notion: mappings $$f: (\mathcal{M},\mathcal{A}) \to (\mathcal{N},\mathcal{B})$$ from a smooth manifold $$\mathcal{M}$$ with atlas $$\mathcal{A}$$ onto another manifold $$\mathcal{N}$$ with atlas $$\mathcal{B}$$ (where $$\mathcal{N}$$ may be identical with $$\mathcal{M}$$). The point $$p$$, which is contained in an open subset $$U$$ of $$\mathcal{M}$$, is mapped onto the point $$f(p)$$ in $$N$$, which, of course, is contained in the image $$f(U)$$ of $$U$$. Let's investigate what it means for such a function $$f$$ to be differentiable (see Figure 2):
 
 {{% panel theme="note" %}}
 Let $$\mathcal{M}$$ and $$\mathcal{N}$$ be smooth manifolds of dimensions $$m$$ and $$n$$, respectively. 
@@ -147,7 +147,7 @@ The mapping $$f$$ is said to be **smooth** or **differentiable** if the coordina
 {{% /panel %}}
 
 <center>
-{{< figure src="/img/2020-01-12-differentiable-manifolds/smooth-mapping.jpg" width="600px" caption="Differentiability of a Mapping" caption-position="bottom" caption-effect="fade"	>}}
+{{< figure src="/img/2020-01-12-differentiable-manifolds/smooth-mapping.jpg" width="600px" caption="Figure 2: Differentiability of a Mapping" caption-position="bottom" caption-effect="fade"	>}}
 </center>
 
 Note that from the definition it follows that a function between two manifolds cannot have a stronger differentiability property than do the manifolds themselves.
@@ -162,7 +162,7 @@ Let $$\mathcal{M}$$ and $$\mathcal{N}$$ be two differentiable manifolds. A **dif
 
 In a sense, diffeomorphisms are to differentiable manifolds what homeomorphisms are to topological spaces, and what isomorphisms are to vector spaces. Let's now look at concrete examples which are relevant to the world of physics. 
 
-If the manifold $$\mathcal{N}$$ to which $$f$$ leads is $$\mathbb{R}$$, then the chart mapping $$\psi$$ is the identity. In this case $$f$$ is a smooth *function* on $$\mathcal{M}$$ (see Figure~\ref{smooth-function}).  
+If the manifold $$\mathcal{N}$$ to which $$f$$ leads is $$\mathbb{R}$$, then the chart mapping $$\psi$$ is the identity. In this case $$f$$ is a smooth *function* on $$\mathcal{M}$$ (see Figure 3).  
 
 {{% panel theme="note" %}}
 A **smooth function** on a manifold $$\mathcal{M}$$ is a mapping from $$\mathcal{M}$$ to the real numbers,
@@ -173,7 +173,7 @@ for which $$f \circ \phi_\alpha^{-1}$$ is a smooth function on the open neighbor
 {{% /panel %}}
 
 <center>
-{{< figure src="/img/2020-01-12-differentiable-manifolds/smooth-function.jpg" width="600px" caption="Smooth function on a manifold" caption-position="bottom" caption-effect="fade"	>}}
+{{< figure src="/img/2020-01-12-differentiable-manifolds/smooth-function.jpg" width="600px" caption="Figure 3: Smooth function on a manifold" caption-position="bottom" caption-effect="fade"	>}}
 </center>
 
 An example is provided by the Hamiltonian function $$H$$, which assigns a real
@@ -181,7 +181,7 @@ number to each point of phase space $$\mathbb{P}$$, assuming $$H$$ to be indepen
 If $$H$$ has an explicit time dependence, it assigns a real number to each point of
 $$\mathbb{P} \times \mathbb{R}_t$$, the direct product of phase space and time axis.
 
-Considered as a mapping, a \textit{curve} might be thought of as going the opposite way as compared to a function (see Figure~\ref{curve-on-manifold}). Let's look at the example of the orbit of a particle in space and time. A real parameter measuring, say, proper time $$\tau \in \mathbb{R}_\tau$$ determines the point $$x(\tau)$$ on $$\mathcal{M}$$ where the particle is found at
+Considered as a mapping, a *curve* might be thought of as going the opposite way as compared to a function (see Figure 4). Let's look at the example of the orbit of a particle in space and time. A real parameter measuring, say, proper time $$\tau \in \mathbb{R}_\tau$$ determines the point $$x(\tau)$$ on $$\mathcal{M}$$ where the particle is found at
 time $$\tau$$. As $$\tau$$ runs along the real axis or an open interval $$I \subset \mathbb{R}_\tau$$ the time axis, the particle moves along its one-dimensional orbit in spacetime $$\mathcal{M}$$. 
 
 
@@ -200,7 +200,7 @@ $$
 {{% /panel %}}
 
 <center>
-{{< figure src="/img/2020-01-12-differentiable-manifolds/curve-on-manifold.jpg" width="600px" caption="Smooth curve on a manifold" caption-position="bottom" caption-effect="fade"	>}}
+{{< figure src="/img/2020-01-12-differentiable-manifolds/curve-on-manifold.jpg" width="600px" caption="Figure 4: Smooth curve on a manifold" caption-position="bottom" caption-effect="fade"	>}}
 </center>
 
 Let's briefly wrap up this section: 
@@ -216,3 +216,6 @@ Let's briefly wrap up this section:
 * What happens at the intersection of charts? The definition of a smooth manifold contained the requirement that all charts are compatible of class $$C^\infty$$, i.e. all chart transitions $$\phi_{\alpha\beta}$$ are smooth. Therefore, all charts will agree about the smoothness or otherwise of a function $$f : \mathcal{M} \to \mathbb{R}$$ or a curve $$\gamma : \mathbb{R} \to \mathcal{M}$$.
 
 
+### Literature
+
+The main sources for this post are the relativity books by [Scheck](https://www.springer.com/de/book/9783662555774), [Straumann](https://www.springer.com/de/book/9789400754096), [Carroll](https://www.preposterousuniverse.com/spacetimeandgeometry/), and [Wald](https://www.press.uchicago.edu/ucp/books/book/chicago/G/bo5952261.html). I also enjoy the lecture notes by [Sergei Winitzki](https://sites.google.com/site/winitzki/index/topics-in-general-relativity), [Matthias Bartelmann](https://heiup.uni-heidelberg.de/catalog/book/534), [Haye Hinrichsen](https://gr.hayehinrichsen.de/), and [Meik Hellmund](http://www.math.uni-leipzig.de/~hellmund/gr.html). Among the mathematical literature, the books by [Wolfgang Kühnel](https://bookstore.ams.org/stml-77) and [Stephen Lovett](https://www.crcpress.com/Differential-Geometry-of-Manifolds/Lovett/p/book/9781568814575) are very readable.
