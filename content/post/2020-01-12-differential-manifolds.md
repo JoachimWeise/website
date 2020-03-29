@@ -6,7 +6,7 @@ bigimg: [{src: "/img/2020-01-12-differentiable-manifolds/venedig.jpg", desc: "Ve
 tags: ["geometry", "relativity", "mathematics", "physics"]
 ---
 
-This is the first post in short series that I write on the basics of differential or  Riemannian geometry. Differential geometry is a key mathematical foundation of general relativity, and the terminology presented here is a prerequisite for reading some of the more advanced textbooks, such as the ones by Carroll, MTW, Wald, Straumann or Hawking/Ellis. Here I start with differentiable manifolds. The second post will cover tangent spaces and tensors, the third one coveriant derivatives and parallel transport. The presentation will be informal, focusing mostly on motivation, definitions and key facts, not on mathematical proofs.
+This is the first post in short series that I write on the basics of differential or  Riemannian geometry. Differential geometry is a key mathematical foundation of general relativity, and the terminology presented here is a prerequisite for reading some of the more advanced textbooks, such as the ones by Carroll, MTW, Wald, Straumann or Hawking/Ellis. Here I start with differentiable manifolds. The following posts will cover [tangent spaces](/post/2020-03-01-tangent-space/), tensors, covariant derivatives and parallel transport. The presentation will be informal, focusing mostly on motivation, definitions and key facts, not on mathematical proofs.
 
 
 <!--more-->
