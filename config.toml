@@ -10,6 +10,7 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentOptions = "linenos=inline"
+enableRobotsTXT = true
 
 [[Params.bigimg]]
   src = "img/night.jpg"
