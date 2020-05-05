@@ -4,6 +4,7 @@ DefaultContentLanguage = "en"
 theme = "beautifulhugo"
 title = "Joachim Weise"
 metaDataFormat = "yaml"
+googleAnalytics = "UA-165585092-1"
 
 pygmentsUseClassic = false
 pygmentsUseClasses = true
