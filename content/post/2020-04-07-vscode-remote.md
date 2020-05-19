@@ -79,7 +79,7 @@ The process is also documented in the following picture which, on the left hand 
 {{< figure src="/img/2020-04-07-vscode-remote/arduino-cli_01a.jpg" width="750px" caption="Installing Arduino Boards" caption-position="bottom" caption-effect="fade">}}
 </center>
 
-From a hardware perspective we are good to go but we may need to import external libraries before we can compile and Arduino sketch. In my case I needed a library for the Adafruit Motor shield. You can search for libraries like this:
+From a hardware perspective we are good to go but we may need to import external libraries before we can compile an Arduino sketch. In my case I needed a library for the Adafruit Motor shield. You can search for libraries like this:
     arduino-cli lib search adafruit motor shield
 
 This will result in a list of related libaries out of which you can then install the right one: 
@@ -110,5 +110,5 @@ The final picture shows the result of our work. We can now develop Python code f
 ### Links
 
 Finally, some links that I found helpful:
-* first
+* Visual Studio Code remote development using SSH is well-documented [here](https://code.visualstudio.com/docs/remote/ssh) and [here](https://code.visualstudio.com/blogs/2019/05/02/remote-development).
 * The Arduino CLI is relatively well documented on their [GitHub page](https://arduino.github.io/arduino-cli/). Additional websites that may be helpful: [One](https://learn.sparkfun.com/tutorials/efficient-arduino-programming-with-arduino-cli-and-visual-studio-code/all), [two](https://peppe8o.com/connecting-raspberry-pi-zero-w-to-arduino-only-via-terminal/), [three](https://peppe8o.com/installing-external-libraries-with-arduino-cli-on-raspberry-pi/).
