@@ -12,6 +12,8 @@ Anyone who works on Python projects and uses various packages will sooner or lat
 
 <!--more-->
 
+[NOTE: THIS IS WORK IN PROGRESS]
+
 ### Overview
 
 At its core, the main purpose of Python virtual environments is to create an isolated environment for Python projects. This means that each project can have its own dependencies, regardless of what dependencies every other project has. You can think of a virtual environment as a carbon copy of a base version of Python. If you’ve installed Python 3.7.3, for example, then you can create many virtual environments based off of it. When you install a package in a virtual environment, you do it in isolation from other Python environments you may have. Each virtual environment has its own copy of the python executable.

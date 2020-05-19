@@ -11,6 +11,9 @@ The Windows Subsystem for Linux (WSL) is a great solution for developers to nati
  
 <!--more-->
 
+[NOTE: THIS IS WORK IN PROGRESS]
+
+
 ## Motivation
 
 [POSIX](https://en.wikipedia.org/wiki/POSIX), the Portable Operating System Interface, is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. POSIX defines the application programming interface (API), along with command line shells and utility interfaces, for software compatibility with variants of Unix and other operating systems. Mac and Linux are considered to be POSIX, but Windows is not, and this makes it difficult for some developers, especially webdevs, to develop on Windows as they need access to a POSIX environment.

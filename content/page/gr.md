@@ -1,7 +1,7 @@
 ---
 title: General Relativity
 markup: mmark
-subtitle: Overview page for posts related to GR
+subtitle: Overview of posts related to GR
 comments: false
 ---
 
