@@ -260,6 +260,7 @@ Removing an environment is done like this, depending on how it was set up:
 - Python Environment [101](https://towardsdatascience.com/python-environment-101-1d68bda3094d): How are pyenv and pipenv different and when you should be using them
 - [What Is Pip?](https://realpython.com/what-is-pip/) A Guide for New Pythonistas
 - Using Python environments in [VS Code](https://code.visualstudio.com/docs/python/environments)
+- Using Virtual Environments in [Jupyter Notebook](https://janakiev.com/blog/jupyter-virtual-envs/) and Python
 
 
 **Articles on `pyenv`**
@@ -272,6 +273,7 @@ Removing an environment is done like this, depending on how it was set up:
 - [Pipenv:](https://realpython.com/pipenv-guide/) A Guide to the New Python Packaging Tool
 - Why Python devs should use [Pipenv](https://opensource.com/article/18/2/why-python-devs-should-use-pipenv)
 - [Pipenv](https://docs.python-guide.org/dev/virtualenvs/) & Virtual Environments
+- Virtual Environments for Data Science: Running Python and [Jupyter with Pipenv](https://towardsdatascience.com/virtual-environments-for-data-science-running-python-and-jupyter-with-pipenv-c6cb6c44a405)
 
 
 
@@ -281,5 +283,6 @@ Removing an environment is done like this, depending on how it was set up:
 - Setting Up Python for [Machine Learning](https://realpython.com/python-windows-machine-learning-setup/) on Windows
 - The [Definitive Guide](https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533) to Conda Environments
 - Why you need Python environments and how to manage them with [Conda](https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda)
+- Setting Up Python for Machine Learning on Windows | Understanding [Conda Environments](https://realpython.com/python-windows-machine-learning-setup/#understanding-conda-environments)
 
 

@@ -39,6 +39,6 @@ And finally some impressions from the Brandenburg Gate which saw a 3D video mapp
   {{< figure thumb="-thumb" link="/img/2019-10-20-festival-of-light/P1190668.JPG" caption="Brandenburg Gate">}}
   {{< figure thumb="-thumb" link="/img/2019-10-20-festival-of-light/P1190677.JPG" caption="Brandenburg Gate">}}
   {{< figure thumb="-thumb" link="/img/2019-10-20-festival-of-light/P1190693.JPG" caption="Brandenburg Gate">}}
-  {{< figure thumb="-thumb" link="/img/2019-10-20-festival-of-light/P1190695.JPG" caption="Brandenburg Gate">}}
+  {{< figure thumb="-thumb"  link="/img/2019-10-20-festival-of-light/P1190695.JPG" caption="Brandenburg Gate">}}
 {{< /gallery >}}
 
