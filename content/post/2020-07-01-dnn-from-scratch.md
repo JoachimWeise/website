@@ -3,6 +3,7 @@ title: Neural Networks from Scratch
 markup: mmark
 date: 2020-07-01
 bigimg: [{src: "/img/2020-01-12-differentiable-manifolds/venedig.jpg", desc: "Venice, heading for a thunder storm (July 2019)"}]
+draft: true
 tags: ["deep learning", "machine learning"]
 ---
 
