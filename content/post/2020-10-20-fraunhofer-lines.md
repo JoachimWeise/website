@@ -1,11 +1,11 @@
 ---
 title: Fraunhofer Lines
-subtitle: Some history and physics of solar spectra
+subtitle: Some early history and physics of solar spectra
 date: 2020-10-20
 markup: "mmark"
 bigimg: [{src: "/img/2020-10-20-fraunhofer-lines/solar_spectrum_CCD.jpg", 
 desc: "Solar spectrum (KPNO 1981)"}]
-tags: ["physics"]
+tags: ["astronomy", "astrophysics", "physics"]
 ---
 
 

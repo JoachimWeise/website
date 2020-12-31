@@ -1,11 +1,11 @@
 ---
 title: Exploring Stars with NAAP
 subtitle: Explorations with the Nebraska Astronomy Applet Project
-date: 2020-10-27
+date: 2020-11-27
 markup: "mmark"
 bigimg: [{src: "/img/2020-04-25-ai-weekly-17-2020.jpg", desc: "Cherry blossom (Berlin 2020)"}]
 draft: true
-tags: ["physics"]
+tags: ["astronomy", "physics"]
 ---
 
 The University of Nebraska-Lincoln [astronomy education group](https://astro.unl.edu/) (NAAP) consists of a team of artists and programmers, developing a variety of astronomy education materials, among them [simulations and animations](https://astro.unl.edu/animationsLinks.html) and [applet-based online labs](https://astro.unl.edu/naap/)
@@ -46,3 +46,37 @@ Spectrum of black-body with our Sun's temperature</small></p>
 
 ### Stellar Spectra and Luminosity
 
+Almost everything we know about stars comes from observing light, and most of the details come from measuring their spectra. The analysis of stellar spectra began with Joseph von Fraunhofer's observations on which I had written in an [earlier post on Fraunhofer 2020-10-20-fraunhofer-lines](/post/2020-10-20-fraunhofer-lines/). Spectral characteristics are used by astronomers for various schemes of stellar classification. 
+
+In 1943, astronomers Morgan, Keenan and Kellman of Yerkes Observatory published a scheme for incorporating the width of absorption lines into stellar classification. Their book [An Atlas Of Stellar Spectra](http://ned.ipac.caltech.edu/level5/ASS_Atlas/MK_contents.html) (see also this [shorter PDF version](https://www.ucl.ac.uk/ucl-observatory/sites/ucl-observatory/files/mkkbook.pdf) and their [1973 Annual Reviews article](http://articles.adsabs.harvard.edu/pdf/1973ARA%26A..11...29M)) defined the *Yerkes spectral classification* or *MK system*. It used the same letters as the old Harvard system, O, B, A, F, G, K, M, and the same arabic numeral for subclasses based on line ratios, A0, A1, A2, etc., but added another element: a roman numeral between "I" (one) and "V" (five). The higher the number, the wider the lines. 
+
+The MK system is a two-dimensional classification scheme based on the fact that spectral lines are sensitive to 
+
+- stellar temperature and 
+- surface gravity, which is related to luminosity.
+
+Denser stars with higher surface gravity exhibit greater pressure broadening of spectral lines. The gravity, and hence the pressure, on the surface of a giant star is much lower than for a dwarf star because the radius of the giant is much greater than a dwarf of similar mass. 
+
+
+
+
+
+
+
+
+We also
+discussed the classification of spectral classes and how it nicely divides stars
+based on their effective temperature, intrinsic brightness, spectrum, and mass.
+What we didn’t discuss is another important classification that can be seen on
+the HR diagram, the luminosity class.
+Recall that while stars spend most of their time fusing H into He on the
+main sequence, there are also periods of time where they are powered by other
+reactions (like He fusion powered giant stars, white dwarfs, neutron stars, etc).
+But since the stars temperature and brightness depend on its initial mass, many
+stars that are of the same luminosity class (ie giant stars) will be spread out a
+bit on the HR diagram (see Figure 4). So while stars spend most of their time
+on the main sequence (luminosity class V), a sun-like star will become a giant
+star (luminosity class IV) while it is burning He and a white dwarf (luminosity
+class VII) after it no longer has any gas it can fuse and is supported only by
+electron degeneracy pressure.
+The exercises for this simulation are mainly geared toward your understanding of stellar blackbody, emission, and absorption spectra.

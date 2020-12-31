@@ -36,3 +36,7 @@ Other sources
 * [Noch was](https://www.inf.ed.ac.uk/teaching/courses/mlpr/2017/notes/w5a_backprop.pdf) und [noch was](https://www.jeremyjordan.me/neural-networks-training/) und [noch was](https://colah.github.io/posts/2015-08-Backprop/) und [noch was](http://d2l.ai/chapter_multilayer-perceptrons/backprop.html#backpropagation)
 * [Automatic Differentiation](https://arxiv.org/pdf/1502.05767.pdf) in Machine Learning: a Survey
 * [The Matrix Calculus](https://explained.ai/matrix-calculus/index.html) You Need For Deep Learning
+
+https://www.inf.ed.ac.uk/teaching/courses/mlpr/2017/notes/w5a_backprop.pdf
+http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/
+http://www.briandolhansky.com/blog/2013/9/27/artificial-neural-networks-backpropagation-part-4
