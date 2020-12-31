@@ -29,7 +29,7 @@ Within two years of his return to Rome, Secchi had founded a new observatory at 
 {{< /gallery >}}
 <center>
 <p style="color:#989898; width: 720px; text-align: justify; line-height: 1.1"><small>
-**Fig. 3:** Merz equatorial telescope of palermo astronomical observatory. The instrument was installed in 1865 and identical to the one used by Father Angelo Secchi at the Collegio Romano Observatory. The photograph shows the telescope as it was around the end of the 19th century.
+**Figs. 1, 2:** Merz equatorial telescope at the Collegio Romano Observatory. **Fig. 3:** Merz equatorial telescope of palermo astronomical observatory. The instrument was installed in 1865 and is identical to the one used by Secchi at the Collegio Romano Observatory.
 </small></p>
 </center>
 
@@ -143,10 +143,7 @@ Relying on insights from what was then the newly developing science of quantum m
 
 ### The MKK (Yerkes) and MK classification systems
 
-Later on, progress in nuclear physics and the increasing knowledge about stellar evolution required a further adaptation and extension of the classification system. So it was recognized that within the same spectral class stars can exhibit totally different absolute luminosities, mainly caused by different stages of stellar development. Spectral lines are sensitive to 
-
-- stellar temperature and 
-- surface gravity, which is related to luminosity.
+Later on, progress in nuclear physics and the increasing knowledge about stellar evolution required a further adaptation and extension of the classification system. So it was recognized that within the same spectral class stars can exhibit totally different absolute luminosities, mainly caused by different stages of stellar development. Spectral lines are sensitive to stellar temperature and surface gravity, which again is related to luminosity.
 
 Denser stars with higher surface gravity exhibit greater pressure broadening of spectral lines. The gravity, and hence the pressure, on the surface of a giant star is much lower than for a dwarf star because the radius of the giant is much greater than a dwarf of similar mass. In 1943, as another milestone, the classification system was extended with an additional Roman numeral by W. Morgan, P. Keenan and S. Kellmann from Mt. Wilson Observatory. This second dimension of the classification specifies the eight luminosity classes. Classes are described by:
 
