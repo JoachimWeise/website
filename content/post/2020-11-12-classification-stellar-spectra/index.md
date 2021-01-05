@@ -155,8 +155,7 @@ As a dwarf star the Sun is classified as G2V since it is still located on the ma
 spectral type and decimal subtype. The spectral types were broadly based on the Harvard system, but the criteria were more precisely defined and a large number of standard stars given for each type.
 
 
-After a decade's practical use of the MKK system, Johnson and Morgan published and extremely influential article in the [Astrophysical Journal](http://articles.adsabs.harvard.edu/pdf/1973ARA%26A..11...29M) in 1953 with a number of cosmetic changes to tidy up the system. Most of this paper deals with defining the UBV system of photoelectric photometry. Morgan had ten years
-earlier recognized the value of photometry in achieving a uniform system of spectral classification. He now formalized some small changes to the original MKK system of classification, some of which were already mooted earlier. For example, the early B supergiants were divided into classes Ia and Ib, some of the F giants were downgraded a class from III to IV and G and K giant standards were redefined to give a smoother (B − V) colour versus spectral-type relationship.
+After a decade's practical use of the MKK system, Johnson and Morgan published and extremely influential article in the [Astrophysical Journal](http://articles.adsabs.harvard.edu/pdf/1973ARA%26A..11...29M) in 1953 with a number of cosmetic changes to tidy up the system. Most of this paper deals with defining the UBV system of photoelectric photometry [(see also this post)](/post/2020-11-13-measuring-stars/). Morgan had ten years earlier recognized the value of photometry in achieving a uniform system of spectral classification. He now formalized some small changes to the original MKK system of classification, some of which were already mooted earlier. For example, the early B supergiants were divided into classes Ia and Ib, some of the F giants were downgraded a class from III to IV and G and K giant standards were redefined to give a smoother (B − V) colour versus spectral-type relationship.
 
 The resulting MK system has remained easily the most used spectral classification system until the present time, although further small changes were introduced in 1973 (referred to as
 the ‘revised MK system’) in their [1973 Annual Review article](http://articles.adsabs.harvard.edu/pdf/1973ARA%26A..11...29M).
@@ -178,6 +177,8 @@ the ‘revised MK system’) in their [1973 Annual Review article](http://articl
 
 
 Angelo Secchi - [Tra Cielo e Terra](https://tracieloeterra.bicentenarioangelosecchi.it/?lang=en)
+
+Bennett, J., et al.: *The Cosmic Perspective* (Pearson 2014).
 
 Chinnici, I. (Ed.): *Merz Telescopes. A Global Heritage Worth Preserving* (Springer International Publishing, 2017).
 
