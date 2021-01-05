@@ -5,7 +5,7 @@ date: 2020-11-20
 markup: "mmark"
 bigimg: [{src: "solar_spectrum_CCD.jpg", 
 desc: "Solar spectrum (KPNO 1981)"}]
-draft: true
+draft: false
 tags: ["astronomy", "astrophysics", "physics"]
 ---
 
